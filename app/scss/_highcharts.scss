@@ -85,8 +85,8 @@
     fill: $slate-secondary-5;
     // use this to change the axis label
     & span:first-child {
-      &:after {
-        content: "%";
+      &:before {
+        content: "$";
     }
     }
   }
@@ -205,8 +205,8 @@
   /* Series options */
   /* Default colors */
   .highcharts-color-0 {
-    fill: $green-primary;
-    stroke: $green-primary;
+    fill: $slate-secondary-2;
+    stroke: $slate-secondary-2;
   }
   
   .highcharts-color-1 {
@@ -215,18 +215,18 @@
   }
   
   .highcharts-color-2 {
-    fill: $purple-primary;
-    stroke: $purple-primary;
+    fill: $slate-secondary-4;
+    stroke: $slate-secondary-4;
   }
   
   .highcharts-color-3 {
-    fill: $yellow-primary;
-    stroke: $yellow-primary;
+    fill: $green-secondary-3;
+    stroke: $green-secondary-3;
   }
   
   .highcharts-color-4 {
-    fill: $blue-primary;
-    stroke: $blue-primary;
+    fill: $green-secondary-4;
+    stroke: $green-secondary-4;
   }
   
   // .highcharts-color-5 {
@@ -273,8 +273,10 @@
   }
   
   .highcharts-data-label {
-    font-size: 0.9em;
-    font-weight: bold;
+    fill: #000;
+    font-size: 14px;
+    cursor: pointer;
+    stroke-width: 0;
   }
   
   .highcharts-data-label-box {
